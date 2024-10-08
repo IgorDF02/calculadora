@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Empresarial</title>
+</head>
+<body>
+    <h1>Resultados</h1>
+
+    <h2>Liquidez</h2>
+    <label>Liquidez Geral</label>
+    <span id="liquidez_g"></span>
+    <label>Liquidez Corrente</label>
+    <span id="liquidez_c"></span>
+    <label>Liquidez Seca</label>
+    <span id="liquidez_s"></span>
+    <label>Liquidez Imediata</label>
+    <span id="liquidez_i"></span>
+
+    <h2>Rentabilidade</h2>
+    <label>Margem Bruta</label>
+    <span id="mb"></span>
+    <label>Margem Operacional</label>
+    <span id="mo"></span>
+    <label>Margem Líquida</label>
+    <span id="ml"></span>
+    <label>Retorno sobre o PL (ROE)</label>
+    <span id="roe"></span>
+    <label>Retorno sobre os Ativos (RSI ou ROA)</label>
+    <span id="roa"></span>
+
+    <h2>Endividamento</h2>
+    <label>Composição do Endividamento</label>
+    <span id="comp_end"></span>
+    <label>Endividamento Geral</label>
+    <span id="end_geral"></span>
+    <label>Participação do Capital de Terceiros</label>
+    <span id="part_cap"></span>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const liquidez_g = urlParams.get('liquidez_g');
+        const liquidez_c = urlParams.get('liquidez_c');
+        const liquidez_s = urlParams.get('liquidez_s');
+        const liquidez_i = urlParams.get('liquidez_i');
+        const mb = urlParams.get('mb');
+        const mo = urlParams.get('mo');
+        const ml = urlParams.get('ml');
+        const roe = urlParams.get('roe');
+        const roa = urlParams.get('roa');
+        const comp_end = urlParams.get('comp_end');
+        const end_geral = urlParams.get('end_geral');
+        const part_cap = urlParams.get('part_cap');
+
+        document.getElementById('liquidez_g').textContent = liquidez_g;
+        document.getElementById('liquidez_c').textContent = liquidez_c;
+        document.getElementById('liquidez_s').textContent = liquidez_s;
+        document.getElementById('liquidez_i').textContent = liquidez_i;
+        document.getElementById('mb').textContent = mb;
+        document.getElementById('mo').textContent = mo;
+        document.getElementById('ml').textContent = ml;
+        document.getElementById('roe').textContent = roe;
+        document.getElementById('roa').textContent = roa;
+        document.getElementById('comp_end').textContent = comp_end;
+        document.getElementById('end_geral').textContent = end_geral;
+        document.getElementById('part_cap').textContent = part_cap;
+    </script>
+</body>
+</html>
