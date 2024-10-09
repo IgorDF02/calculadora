@@ -29,20 +29,20 @@ def gerar_pdf():
     pdf.add_page()
     pdf.set_font("Arial", size=12)
     
-    pdf.cell(200, 10, txt=f"Liquidez : {liquidez_g}", ln=True)
-    pdf.cell(200, 10, txt=f"Liquidez : {liquidez_c}", ln=True)
-    pdf.cell(200, 10, txt=f"Liquidez : {liquidez_g}", ln=True)
-    pdf.cell(200, 10, txt=f"Liquidez : {liquidez_c}", ln=True)
+    pdf.cell(200, 10, txt=f"Liquidez Geral: {liquidez_g}", ln=True)
+    pdf.cell(200, 10, txt=f"Liquidez Corrente: {liquidez_c}", ln=True)
+    pdf.cell(200, 10, txt=f"Liquidez Seca: {liquidez_s}", ln=True)
+    pdf.cell(200, 10, txt=f"Liquidez Imediata: {liquidez_i}", ln=True)
 
-    pdf.cell(200, 10, txt=f"mb: {mb}", ln=True)
-    pdf.cell(200, 10, txt=f"mo: {mo}", ln=True)
-    pdf.cell(200, 10, txt=f"ml: {ml}", ln=True)
-    pdf.cell(200, 10, txt=f"roe: {roe}", ln=True)
-    pdf.cell(200, 10, txt=f"roa: {roa}", ln=True)
+    pdf.cell(200, 10, txt=f"Margem Bruta: {mb}", ln=True)
+    pdf.cell(200, 10, txt=f"Margem Operacional: {mo}", ln=True)
+    pdf.cell(200, 10, txt=f"Margem Líquida: {ml}", ln=True)
+    pdf.cell(200, 10, txt=f"Retorno sobre o PL (ROE): {roe}", ln=True)
+    pdf.cell(200, 10, txt=f"Retorno sobre os ativos (RSI ou ROA): {roa}", ln=True)
     
-    pdf.cell(200, 10, txt=f"comp_end: {comp_end}", ln=True)
-    pdf.cell(200, 10, txt=f"end_geral: {end_geral}", ln=True)
-    pdf.cell(200, 10, txt=f"part_cap: {part_cap}", ln=True)
+    pdf.cell(200, 10, txt=f"Composição de Endividamento: {comp_end}", ln=True)
+    pdf.cell(200, 10, txt=f"Endividamento Geral: {end_geral}", ln=True)
+    pdf.cell(200, 10, txt=f"Participação do Capitais de terceiros: {part_cap}", ln=True)
 
     # Salvar o PDF
     pdf_file_path = "formulario.pdf"
