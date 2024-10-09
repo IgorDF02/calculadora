@@ -29,5 +29,5 @@ document.getElementById('form').addEventListener('submit', function(event){
     const end_geral = passivo_t / ativo_t * 100;
     const part_cap = patrimonio_l !== 0 ? passivo_t / patrimonio_l * 100 : 0; //evita divisão por 0
 
-    window.location.href = `valores.html?liquidez_g=${liquidez_g}&liquidez_c=${liquidez_c}&liquidez_s=${liquidez_s}&liquidez_i=${liquidez_i}&mb=${mb}&mo=${mo}&ml=${ml}&roe=${roe}&roa=${roa}&comp_end=${comp_end}&end_geral=${end_geral}&part_cap=${part_cap}`;
+    window.location.href = `/valores.html?liquidez_g=${liquidez_g}&liquidez_c=${liquidez_c}&liquidez_s=${liquidez_s}&liquidez_i=${liquidez_i}&mb=${mb}&mo=${mo}&ml=${ml}&roe=${roe}&roa=${roa}&comp_end=${comp_end}&end_geral=${end_geral}&part_cap=${part_cap}`;
 });
