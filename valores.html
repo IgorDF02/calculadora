@@ -9,6 +9,7 @@
 <body>
     <h1>Resultados</h1>
 
+<form id="meuFormulario" action="gerar_pdf" method="post">
     <h2>Liquidez</h2>
     <label>Liquidez Geral</label>
     <span id="liquidez_g"></span>
@@ -38,6 +39,9 @@
     <span id="end_geral"></span>
     <label>Participação do Capital de Terceiros</label>
     <span id="part_cap"></span>
+
+    <input type="submit" value="Gerar PDF">
+</form>
 
     <script>
         const urlParams = new URLSearchParams(window.location.search);
