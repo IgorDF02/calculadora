@@ -58,18 +58,33 @@
         const end_geral = urlParams.get('end_geral');
         const part_cap = urlParams.get('part_cap');
 
-        document.getElementById('liquidez_g').textContent = liquidez_g;
-        document.getElementById('liquidez_c').textContent = liquidez_c;
-        document.getElementById('liquidez_s').textContent = liquidez_s;
-        document.getElementById('liquidez_i').textContent = liquidez_i;
-        document.getElementById('mb').textContent = mb;
-        document.getElementById('mo').textContent = mo;
-        document.getElementById('ml').textContent = ml;
-        document.getElementById('roe').textContent = roe;
-        document.getElementById('roa').textContent = roa;
-        document.getElementById('comp_end').textContent = comp_end;
-        document.getElementById('end_geral').textContent = end_geral;
-        document.getElementById('part_cap').textContent = part_cap;
+          // Atualiza os valores dos spans
+          document.getElementById('liquidez_g').textContent = liquidez_g;
+          document.getElementById('liquidez_c').textContent = liquidez_c;
+          document.getElementById('liquidez_s').textContent = liquidez_s;
+          document.getElementById('liquidez_i').textContent = liquidez_i;
+          document.getElementById('mb').textContent = mb;
+          document.getElementById('mo').textContent = mo;
+          document.getElementById('ml').textContent = ml;
+          document.getElementById('roe').textContent = roe;
+          document.getElementById('roa').textContent = roa;
+          document.getElementById('comp_end').textContent = comp_end;
+          document.getElementById('end_geral').textContent = end_geral;
+          document.getElementById('part_cap').textContent = part_cap;
+  
+          // Agora, atualize os valores dos inputs ocultos para envio
+          document.getElementById('liquidez_g_input').value = liquidez_g;
+          document.getElementById('liquidez_c_input').value = liquidez_c;
+          document.getElementById('liquidez_s_input').value = liquidez_s;
+          document.getElementById('liquidez_i_input').value = liquidez_i;
+          document.getElementById('mb_input').value = mb;
+          document.getElementById('mo_input').value = mo;
+          document.getElementById('ml_input').value = ml;
+          document.getElementById('roe_input').value = roe;
+          document.getElementById('roa_input').value = roa;
+          document.getElementById('comp_end_input').value = comp_end;
+          document.getElementById('end_geral_input').value = end_geral;
+          document.getElementById('part_cap_input').value = part_cap;
     </script>
 </body>
 </html>
