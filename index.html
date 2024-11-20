@@ -5,46 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Empresarial</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="script2.js" defer></script> -->
 </head>
 <body>
-    <h1>Bem-vindo à Cálculadora Empresarial</h1>
+    <h1>Bem-vindo à Calculadora Empresarial</h1>
 
     <form id="form">
         <label for="ativo_c">Ativo Circulante: </label>
-        <input type="number" name="ativo_c" id="ativo_c" required>
+        <input type="number" name="ativo_c" id="ativo_c" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
-        <label for="rlp">Realizável a Longo Prazo : </label>
-        <input type="number" name="rlp" id="rlp" required>
+        <label for="rlp">Realizável a Longo Prazo: </label>
+        <input type="number" name="rlp" id="rlp" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
-        <label for="passivo_c">Passivo: Circulante</label>
-        <input type="number" name="passivo_c" id="passivo_c" required>
+        <label for="passivo_c">Passivo Circulante: </label>
+        <input type="number" name="passivo_c" id="passivo_c" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
-        <label for="passivo_nc">Passivo Não Circulante</label>
-        <input type="number" name="passivo_nc" id="passivo_nc" required>
+        <label for="passivo_nc">Passivo Não Circulante: </label>
+        <input type="number" name="passivo_nc" id="passivo_nc" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
-        <label for="estoque">Estoque</label>
-        <input type="number" name="estoque" id="estoque" required>
+        <label for="estoque">Estoque: </label>
+        <input type="number" name="estoque" id="estoque" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="disponivel">Disponível: </label>
-        <input type="number" name="disponivel" id="disponivel" required>
+        <input type="number" name="disponivel" id="disponivel" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="lucro_b">Lucro Bruto: </label>
-        <input type="number" name="lucro_b" id="lucro_b" required>
+        <input type="number" name="lucro_b" id="lucro_b" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="lucro_l">Lucro Líquido: </label>
-        <input type="number" name="lucro_l" id="lucro_l" required>
+        <input type="number" name="lucro_l" id="lucro_l" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="rol">Receita Líquida:</label>
-        <input type="number" name="rol" id="rol" required>
+        <input type="number" name="rol" id="rol" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="lair">Lucro Antes do IR:</label>
-        <input type="number" name="lair" id="lair" required>
+        <input type="number" name="lair" id="lair" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="ativo_t">Ativo Total:</label>
-        <input type="number" name="ativo_t" id="ativo_t" required>
+        <input type="number" name="ativo_t" id="ativo_t" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         <label for="passivo-t">Passivo Total:</label>
-        <input type="number" name="passivo_t" id="passivo_t" required>
+        <input type="number" name="passivo_t" id="passivo_t" placeholder="Ex: R$ 0,00" oninput="formatarMoeda(this)" required>
         <br><br>
         
         <button type="submit">Fazer Cálculos</button>
